@@ -1,1 +1,13 @@
+FROM centos:latest
+MAINTAINER ukmohan18@gmail.com
+RUN yum install -y httpd \
+zip \
+unzip
+ADD https://www.free-css.com/assests/files/free-cs-templates/download/page247/kindle.zip/var/www/html/
 
+WORKDIR varwww/html
+RUN unzip kindle.zip
+RUN cp -rvf markupskindle/* .
+RUN rm -rf _MACOSX markupskindle kindle.zip
+CMD [“/usr/sbin/httpd”, “-D”, “FORRGROUND”]
+EXPOSE 80
