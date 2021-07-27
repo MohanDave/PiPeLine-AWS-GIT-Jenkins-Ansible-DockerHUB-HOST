@@ -62,5 +62,5 @@ ansible-playbook /sourcecode/docker.yml
 
 
 
-. The DockerHub was loggen in on the Ansible server 
+. The DockerHub was logged in on the Ansible server 
  
