@@ -1,6 +1,15 @@
-We first Configure the Ansible server on an AMAZON LINUX 2 (AMI) Machine form the AWS and configured it using putty 
+.We first Configure the Ansible server on an AMAZON LINUX 2 (AMI) Machine form the AWS and configured it using putty 
 
-amazon-linux-extras install ansible2
+  amazon-linux-extras install ansible2
+  
+.Docker package was aso installed on the ansible server
+
+yum install docker 
+
+systemctl enable docker
+
+systemctl start docker
+
 
 .The server was made password less with both jenkins server before it and the docker container on which the dockerimage was deployed in the similar manner as shown in the ansible .odt file in this repository.
 
