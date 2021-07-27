@@ -1,7 +1,13 @@
 1.We first Configure the jenkins server on an AMAZON LINUX 2 (AMI) Machine form the AWS.
+
+
 2.Using putty software the jenkins server was configured on command line
+
+
 3.Configuration of jenkins server , the first step included installing java using the command :
          yum install java* -y
+         
+         
 4. After that the jenkins package was installed on the machine using the following command:
     
     
