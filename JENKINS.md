@@ -32,14 +32,32 @@
          yum install git -y
          
  6. The connection between the jenkins and ansible server was made passwordless by generating the key on jenkins sharing it on ansible server and enabling root login and userauthentication in the sshd_config file on the ansible server
+ 
   ssh-keygen
+  
+  
+  
+  
   ssh-copy-id root@172.31.45.85  (Private IP of the jenkins server ).
          
- 6. The jenkins server sends few additional commands along with the Docker image file for its building arrangements in the ansible server itself .
+ 7. The jenkins server sends few additional commands along with the Docker image file for its building arrangements in the ansible server itself .
 Commands required from the jenkins server for the operations in the ansible server are:
+
+
+
 docker image build -t myimage:v1
+
+
 docker  image tag myimage:v1 (id)/myimage:v1
+
+
+
 docker image push (id)/myimage:v1
+
+
+
+
+
 
 
    
