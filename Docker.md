@@ -8,3 +8,17 @@ systemctl enable docker
 
 systemctl start docker
 
+
+.The Container was created on the Docker container server and the docker image deployed on it. 
+
+docker container ls
+
+
+docker container run
+
+docker container rm (id)
+
+
+
+
+
